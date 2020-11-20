@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<meta name="author" content="Venu Sirpuram" />
 		<meta
@@ -11,197 +11,294 @@
 		/>
 		<meta
 			name="keywords"
-			content="Web Developer, Resume, Portfolio,  JavaScript, React Js"
+			content="Web Developer, Resume, Portfolio, JavaScript, React Js"
 		/>
 
-		<!-- * GOOGLE FONTS * -->
-		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-			rel="stylesheet"
-		/>
-
-		<!-- * BOX-ICONS * -->
-		<link
-			href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
-			rel="stylesheet"
-		/>
+		<!-- * FONT AWESOME -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 		<!-- * EXTERNAL STYLESHEET * -->
 		<link rel="stylesheet" href="./css/style.css" />
+		
+		<!-- * FAVICON -->
+		<link rel="shortcut icon" href="./images/vs-logo.png" type="image/x-icon">
 
 		<title>Portfolio</title>
 	</head>
+
 	<body>
-		<header id="header">
-			<div class="container">
-				<div class="nav-container">
-					<h2 class="logo">Port<span class="logo-end">folio.</span></h2>
-					<nav class="navbar">
-						<ul class="nav-menu">
-							<li class="nav-items">
-								<a class="nav-links" href="#header">Home</a>
-							</li>
-							<li class="nav-items">
-								<a class="nav-links" href="#about">About</a>
-							</li>
-							<li class="nav-items">
-								<a class="nav-links" href="#skills">Skills</a>
-							</li>
-							<li class="nav-items">
-								<a class="nav-links" href="#contact">Contact</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-			<div class="banner">
-				<div class="banner-title">
-					<p>Hi,</p>
-					<p>I'm <span class="name">Venu Sirpuram</span></p>
-					<p>Web <span class="type"></span></p>
-					<!-- <div class="call-to-action"> -->
-					<a class="call-to-action" href="#contact">Contact</a>
-					<!-- </div> -->
-				</div>
-				<div class="banner-image">
-					<img src="./images/banner-image.png" alt="Banner Image" />
-				</div>
-			</div>
-			<div class="social-icons">
-				<div>
-					<i class="bx bxl-facebook-square"></i>
-					<i class="bx bxl-twitter"></i>
-					<i class="bx bxl-linkedin-square"></i>
-				</div>
-			</div>
-		</header>
-
-		<main>
-			<section id="about">
-				<div class="about-title">
-					<h3>About</h3>
-				</div>
-				<div class="about-container">
-					<div class="about-image">
-						<img src="./images/about-us.png" alt="about image" />
+		<header>
+			<nav class="navbar">
+				<div class="container">
+					<div class="logo">
+						<a href="#">Port<span>folio.</span></a>
 					</div>
-					<div class="about-details">
-						<p>I am 23 years old Web Developer from Mumbai.</p>
-						<p>
-							I have been interested in IT and web development for a long
-							time.
-						</p>
-						<p>
-							And in 2015 I have finally took the decision to be the web
-							developer.
-						</p>
-						<p>
-							Diligent, Hard working, Capable of working in a team and on
-							my own.
-						</p>
-					</div>
-				</div>
-			</section>
-
-			<!-- <div id="interests">
-					<h3>Interests</h3>
-					<ul>
-						<li>
-							Always try to search for the latest Frontend news and
-							tasks.
-						</li>
-						<li>Always try to find a new ways to stay healthier.</li>
+					<ul class="menu">
+						<li><a href="#home" class="menu-btn">Home</a></li>
+						<li><a href="#about" class="menu-btn">About</a></li>
+						<li><a href="#services" class="menu-btn">Services</a></li>
+						<li><a href="#skills" class="menu-btn">Skills</a></li>
+						<li><a href="#contact" class="menu-btn">Contact</a></li>
 					</ul>
-				</div> -->
-
-			<section class="more-details">
-				<div id="achievements">
-					<div class="achievement-container">
-						<h3>Achievements</h3>
-						<p>
-							Certification Of Participation in " SIBACA ITGRANDMAASTER "
-							Quiz competition by Sinhgad Institutes ( 2015 - 16 )
-						</p>
-						<p>
-							Certification Of Participation in " SEED IT IDOL " by
-							Infotech Ltd. ( 2017 )
-						</p>
+					<div class="hamburger">
+						<i class="fa fa-bars"></i>
+					</div>
+				</div>
+			</nav>
+		</header>
+		
+		<main>
+			<section class="home" id="home">
+				<div class="container banner">
+					<div class="home-content">
+						<div class="text-1">
+							Hello, my name is
+						</div>
+						<div class="text-2">
+							Venu Sirpuram
+						</div>
+						<div class="text-3">
+							And I'm a <span class="typing"></span>
+						</div>
+						<a href="#contact">Contact</a>
+					</div>
+					<div class="dev-image">
+						<img src="./images/webdeveloper.png" alt="Web developer">
 					</div>
 				</div>
 			</section>
 
-			<section id="skills">
-				<h3>Skills</h3>
-				<!-- <h4>Technologies I'm comfortable with,</h4> -->
-				<div class="brand-logos">
-					<figure>
-						<img src="./images/html5.png" alt="html5" />
-						<figcaption>HTML5</figcaption>
-					</figure>
-					<figure>
-						<img src="./images/css3.png" alt="css3" />
-						<figcaption>CSS3</figcaption>
-					</figure>
-					<figure>
-						<img src="./images/javascript.png" alt="javascript" />
-						<figcaption>JavaScript</figcaption>
-					</figure>
-					<figure>
-						<img class="react" src="./images/react.png" alt="react-js" />
-						<figcaption>React Js</figcaption>
-					</figure>
-					<figure>
-						<img class="node" src="./images/nodejs.png" alt="node-js" />
-						<figcaption>Node Js</figcaption>
-					</figure>
+			<section class="about" id="about">
+				<div class="container">
+					<h2 class="title">
+						About me
+					</h2>
+					<div class="about-content">
+						<div class="column left">
+							<img src="./images/about.png" alt="">
+						</div>
+						<div class="column right">
+							<div class="text">
+								I'm Venu and I'm a <span class="typing-1"></span></div>
+								<br>
+								<p>I am 23 years old Web Developer from Mumbai.</p>
+								<p>
+									I have been interested in IT and web development for a long
+									time.
+								</p>
+								<p>
+									And in 2015 I have finally took the decision to be the web
+									developer.
+								</p>
+								<p>
+									Diligent, Hard working, Capable of working in a team and on
+									my own.
+								</p>
+								<br>
+							<a href="#" download="#">Download CV</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="services" id="services">
+				<div class="container">
+					<h2 class="title">
+						My services
+					</h2>
+					<div class="serv-content">
+						<div class="card">
+							<div class="box">
+								<i class="fa fa-paint-brush"></i>
+								<div class="text">
+									Web Design
+								</div>
+								<p>
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo
+									enim.
+								</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="box">
+								<i class="fa fa-code"></i>
+								<div class="text">
+									Apps Design
+								</div>
+								<p>
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo
+									enim.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="skills" id="skills">
+				<div class="container">
+					<h2 class="title">
+						My skills
+					</h2>
+					<div class="skills-content">
+						<div class="column left">
+							<div class="text">
+								My creative skills & experiences.
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ratione error est
+								recusandae consequatur, iusto illum deleniti quidem impedit, quos quaerat quis minima sequi.
+								Cupiditate recusandae laudantium esse, harum animi aspernatur quisquam et delectus ipsum quam
+								alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod.
+							</p>
+							<a href="#">Read more</a>
+						</div>
+						<div class="column right">
+							<div class="bars">
+								<div class="info">
+									<span>HTML</span>
+									<span>90%</span>
+								</div>
+								<div class="line html">
+								</div>
+							</div>
+							<div class="bars">
+								<div class="info">
+									<span>CSS</span>
+									<span>60%</span>
+								</div>
+								<div class="line css">
+								</div>
+							</div>
+							<div class="bars">
+								<div class="info">
+									<span>JavaScript</span>
+									<span>80%</span>
+								</div>
+								<div class="line js">
+								</div>
+							</div>
+							<div class="bars">
+								<div class="info">
+									<span>React Js</span>
+									<span>30%</span>
+								</div>
+								<div class="line react">
+								</div>
+							</div>
+							<div class="bars">
+								<div class="info">
+									<span>MySQL</span>
+									<span>50%</span>
+								</div>
+								<div class="line mysql">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="contact" id="contact">
+				<div class="container">
+					<h2 class="title">
+						Contact me</h2>
+					<div class="contact-content">
+						<div class="column left">
+							<div class="text">
+								Get in Touch
+							</div>
+							<p>
+								You got cool project in mind? Let's collaborate and create a powerful <span class="brand">brand</span> and <span class="website">website</span> for you.</p>
+							<div class="icons">
+								<div class="row">
+									<i class="fa fa-user"></i>
+									<div class="info">
+										<div class="head">
+											Name
+										</div>
+										<div class="sub-title">
+											Venu Sirpuram
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<i class="fa fa-map-marker"></i>
+									<div class="info">
+										<div class="head">
+											Address</div>
+										<div class="sub-title">
+											Mumbai, India</div>
+									</div>
+								</div>
+								<div class="row">
+									<i class="fa fa-envelope"></i>
+									<div class="info email-left">
+										<div class="head">
+											Email</div>
+										<div class="sub-title">
+											venu.sirpuram@raweng.com</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="column right">
+							<div class="text">
+								Message me</div>
+							<form action="#">
+								<div class="fields">
+									<div class="field name">
+										<input type="text" placeholder="Name" required>
+									</div>
+									<div class="field email">
+										<input type="email" placeholder="Email" required>
+									</div>
+								</div>
+								<div class="field">
+									<input type="text" placeholder="Subject" required>
+								</div>
+								<div class="field textarea">
+									<textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+								</div>
+								<div class="button">
+									<button type="submit">Send message</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="top-btn">
+					<a href="#home"><i class="fa fa-angle-up"></i></a>
 				</div>
 			</section>
 		</main>
 
-		<footer id="contact">
-			<div class="contact-container">
-				<h3>Contact</h3>
-				<div class="form-container">
-					<form action="#">
-						<input
-							type="text"
-							name="fullname"
-							id="fullname"
-							placeholder="Enter you Name"
-						/>
-						<input
-							type="email"
-							name="email"
-							id="email"
-							placeholder="Enter your Email-Id"
-						/>
-						<textarea
-							name="message"
-							id="message"
-							cols="30"
-							rows="8"
-							placeholder="Enter Message"
-						></textarea>
-						<button type="submit">Submit</button>
-					</form>
-				</div>
+		<footer>
+			Copyright &#169; 2020, All Rights Reserved.</span>
+			<div class="social-icons">
+				<a href="https://www.facebook.com">
+					<i class="fa fa-facebook" aria-hidden="true"></i>
+				</a>
+				<a href="#https://www.instagram.com">
+					<i class="fa fa-instagram" aria-hidden="true"></i>
+				</a>
+				<a href="#https://www.linkedin.com">
+					<i class="fa fa-linkedin" aria-hidden="true"></i>
+				</a>	
 			</div>
 		</footer>
-		<div class="top">
-			<a href="#header">
-				<i class="bx bx-up-arrow-alt"></i>
-				Back to top
-			</a>
-		</div>
-		<div class="copyright">
-			<p>Copyright &#169; 2020, All Rights Reserved</p>
-		</div>
-
-		<!-- * SCRIPTS * -->
 
 		<script src="./src/typed.js"></script>
+	
 		<script>
-			var typed = new Typed(".type", {
+			var typed = new Typed(".typing", {
+				strings: ["Designer.", "Developer."],
+				typeSpeed: 100,
+				backSpeed: 90,
+				loop: true,
+			});
+
+			var typed1 = new Typed(".typing-1", {
 				strings: ["Designer.", "Developer."],
 				typeSpeed: 100,
 				backSpeed: 90,
